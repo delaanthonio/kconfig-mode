@@ -7,13 +7,19 @@
   '(("^[\t, ]*\\_<bool\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<int\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<boolean\\_>" . font-lock-type-face)
+    ("^[\t, ]*\\_<hex\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<tristate\\_>" . font-lock-type-face)
+    ("^[\t, ]*\\_<string\\_>" . font-lock-type-face)
+    ("^[\t, ]*\\_<def_bool\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<depends on\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<select\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<help\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<---help---\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<default\\_>" . font-lock-variable-name-face)
+    ("^[\t, ]*\\_<prompt\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<range\\_>" . font-lock-variable-name-face)
+    ("^\\_<choice\\_>" . font-lock-constant-face)
+    ("^\\_<endchoice\\_>" . font-lock-constant-face)
     ("^\\_<config\\_>" . font-lock-constant-face)
     ("^\\_<comment\\_>" . font-lock-constant-face)
     ("^\\_<menu\\_>" . font-lock-constant-face)
@@ -26,9 +32,9 @@
     ("\".*\"$" . font-lock-string-face)))
 
 (defvar kconfig-headings
-  '("bool" "int" "boolean" "tristate" "depends on" "select"
-    "help" "---help---" "default" "range" "config" "comment"
-    "menu" "endmenu" "if" "endif" "menuconfig" "source"))
+  '("bool" "int" "boolean" "hex" "tristate" "string" "def_bool" "depends on"
+    "select" "help" "---help---" "default" "prompt" "range" "choice" "endchoice"
+    "config" "comment" "menu" "endmenu" "if" "endif" "menuconfig" "source"))
 
 (defun kconfig-outline-level ()
   (looking-at "[\t ]*")
