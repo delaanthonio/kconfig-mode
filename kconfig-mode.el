@@ -43,11 +43,8 @@
   "kconfig"
   (setq-local comment-start "# ")
   (setq-local comment-end "")
-  (set (make-local-variable 'font-lock-defaults)
-       '(kconfig-mode-font-lock-keywords t))
-  (set (make-local-variable 'outline-regexp)
-       (concat "^[\t ]*" (regexp-opt kconfig-headings)))
-  (set (make-local-variable 'outline-level)
-       'kconfig-outline-level))
+  (setq-local font-lock-defaults '(kconfig-mode-font-lock-keywords t))
+  (setq-local outline-regexp (concat "^[\t ]*" (regexp-opt kconfig-headings)))
+  (setq-local outline-level 'kconfig-outline-level))
 
 (add-to-list 'auto-mode-alist '("Kconfig" . kconfig-mode))
