@@ -52,8 +52,7 @@
          (end (cdr bds)))
     (list start end kconfig-headings . nil )))
 
-(define-derived-mode kconfig-mode text-mode
-  "kconfig"
+(define-derived-mode kconfig-mode text-mode "Kconfig"
   (setq-local comment-start "# ")
   (setq-local comment-end "")
   (setq-local font-lock-defaults '(kconfig-mode-font-lock-keywords t))
