@@ -45,12 +45,20 @@
 		      (if (equal (elt prefix i) ?\s)
 			  1 tab-width))))))
 
+(defun kconfig-completion-at-point ()
+  "Kconfig completion function added to `completion-at-point-functions'."
+  (let* ((bds (bounds-of-thing-at-point 'symbol))
+         (start (car bds))
+         (end (cdr bds)))
+    (list start end kconfig-headings . nil )))
+
 (define-derived-mode kconfig-mode text-mode
   "kconfig"
   (setq-local comment-start "# ")
   (setq-local comment-end "")
   (setq-local font-lock-defaults '(kconfig-mode-font-lock-keywords t))
   (setq-local outline-regexp (concat "^[\t ]*" (regexp-opt kconfig-headings)))
-  (setq-local outline-level 'kconfig-outline-level))
+  (setq-local outline-level 'kconfig-outline-level)
+  (add-hook 'completion-at-point-functions 'kconfig-completion-at-point nil 'local))
 
 (add-to-list 'auto-mode-alist '("Kconfig" . kconfig-mode))
