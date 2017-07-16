@@ -53,6 +53,7 @@
     (list start end kconfig-headings . nil )))
 
 (define-derived-mode kconfig-mode text-mode "Kconfig"
+  "Major mode for editing Kconfig files in the Linux kernel."
   (setq-local comment-start "# ")
   (setq-local comment-end "")
   (setq-local font-lock-defaults '(kconfig-mode-font-lock-keywords t))
