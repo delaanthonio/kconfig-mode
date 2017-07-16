@@ -61,4 +61,7 @@
   (setq-local outline-level 'kconfig-outline-level)
   (add-hook 'completion-at-point-functions 'kconfig-completion-at-point nil 'local))
 
+;;;###autoload
 (add-to-list 'auto-mode-alist '("Kconfig" . kconfig-mode))
+
+(provide 'kconfig-mode)
