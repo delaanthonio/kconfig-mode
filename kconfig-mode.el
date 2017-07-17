@@ -18,17 +18,19 @@
     ("^[\t, ]*\\_<default\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<prompt\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<range\\_>" . font-lock-variable-name-face)
-    ("^\\_<choice\\_>" . font-lock-constant-face)
-    ("^\\_<endchoice\\_>" . font-lock-constant-face)
-    ("^\\_<config\\_>" . font-lock-constant-face)
-    ("^\\_<comment\\_>" . font-lock-constant-face)
-    ("^\\_<menu\\_>" . font-lock-constant-face)
-    ("^\\_<endmenu\\_>" . font-lock-constant-face)
-    ("^\\_<if\\_>" . font-lock-constant-face)
-    ("^\\_<endif\\_>" . font-lock-constant-face)
-    ("^\\_<menuconfig\\_>" . font-lock-constant-face)
+    ("^\\_<choice\\_>" . font-lock-keyword-face)
+    ("^\\_<endchoice\\_>" . font-lock-keyword-face)
+    ("^\\_<config\\_>" . font-lock-keyword-face)
+    ("^\\_<comment\\_>" . font-lock-keyword-face)
+    ("^\\_<menu\\_>" . font-lock-keyword-face)
+    ("^\\_<endmenu\\_>" . font-lock-keyword-face)
+    ("^\\_<if\\_>" . font-lock-keyword-face)
+    ("^\\_<endif\\_>" . font-lock-keyword-face)
+    ("^\\_<menuconfig\\_>" . font-lock-keyword-face)
     ("^\\_<source\\_>" . font-lock-keyword-face)
+
     ("\#.*" . font-lock-comment-face)
+
     ("\".*\"$" . font-lock-string-face)))
 
 (defvar kconfig-headings
