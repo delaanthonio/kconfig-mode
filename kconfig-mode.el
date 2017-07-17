@@ -25,6 +25,7 @@
     ("^[\t, ]*\\_<range\\_>" . font-lock-variable-name-face)
 
     ("\\s-[1-9]+\\s-" . font-lock-constant-face)
+    ("\\s-[yn]\\s-" . font-lock-constant-face)
 
     ("^\\_<choice\\_>" . font-lock-keyword-face)
     ("^\\_<endchoice\\_>" . font-lock-keyword-face)
