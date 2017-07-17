@@ -34,7 +34,7 @@
 
     ("\#.*" . font-lock-comment-face)
 
-    ("\".*\"$" . font-lock-string-face)))
+    ("\".*\"" . font-lock-string-face)))
 
 (defvar kconfig-headings
   '("bool" "int" "boolean" "hex" "tristate" "string" "def_bool" "depends on"
