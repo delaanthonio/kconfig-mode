@@ -10,6 +10,7 @@
     ("^[\t, ]*\\_<hex\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<tristate\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<string\\_>" . font-lock-type-face)
+
     ("^[\t, ]*\\_<def_bool\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<depends on\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<select\\_>" . font-lock-variable-name-face)
@@ -18,6 +19,7 @@
     ("^[\t, ]*\\_<default\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<prompt\\_>" . font-lock-variable-name-face)
     ("^[\t, ]*\\_<range\\_>" . font-lock-variable-name-face)
+
     ("^\\_<choice\\_>" . font-lock-keyword-face)
     ("^\\_<endchoice\\_>" . font-lock-keyword-face)
     ("^\\_<config\\_>" . font-lock-keyword-face)
@@ -27,6 +29,7 @@
     ("^\\_<if\\_>" . font-lock-keyword-face)
     ("^\\_<endif\\_>" . font-lock-keyword-face)
     ("^\\_<menuconfig\\_>" . font-lock-keyword-face)
+    ("^\\_<source\\_>" . font-lock-keyword-face)
     ("^\\_<source\\_>" . font-lock-keyword-face)
 
     ("\#.*" . font-lock-comment-face)
