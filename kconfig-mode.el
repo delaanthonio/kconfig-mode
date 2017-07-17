@@ -36,7 +36,6 @@
     ("^\\_<if\\_>" . font-lock-keyword-face)
     ("^\\_<endif\\_>" . font-lock-keyword-face)
     ("^\\_<menuconfig\\_>" . font-lock-keyword-face)
-    ("^\\_<source\\_>" . font-lock-keyword-face)
     ("^\\_<source\\_>" . font-lock-keyword-face)))
 
 (defvar kconfig-headings
