@@ -4,7 +4,11 @@
 ;; Copyright © 2017 Dela Anthonio
 
 (defvar kconfig-mode-font-lock-keywords
-  '(("^[\t, ]*\\_<bool\\_>" . font-lock-type-face)
+  '(("\#.*" . font-lock-comment-face)
+
+    ("\".*\"" . font-lock-string-face)
+
+    ("^[\t, ]*\\_<bool\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<int\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<boolean\\_>" . font-lock-type-face)
     ("^[\t, ]*\\_<hex\\_>" . font-lock-type-face)
@@ -32,11 +36,7 @@
     ("^\\_<endif\\_>" . font-lock-keyword-face)
     ("^\\_<menuconfig\\_>" . font-lock-keyword-face)
     ("^\\_<source\\_>" . font-lock-keyword-face)
-    ("^\\_<source\\_>" . font-lock-keyword-face)
-
-    ("\#.*" . font-lock-comment-face)
-
-    ("\".*\"" . font-lock-string-face)))
+    ("^\\_<source\\_>" . font-lock-keyword-face)))
 
 (defvar kconfig-headings
   '("bool" "int" "boolean" "hex" "tristate" "string" "def_bool" "depends on"
