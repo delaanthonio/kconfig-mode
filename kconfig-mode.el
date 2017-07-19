@@ -59,6 +59,9 @@
          (end (cdr bds)))
     (list start end kconfig-headings . nil )))
 
+(defconst kconfig-imenu-generic-expression
+  '(("Config" "^config *\\(.+\\)" 1)))
+
 (define-derived-mode kconfig-mode text-mode "Kconfig"
   "Major mode for editing Kconfig files in the Linux kernel."
   (setq-local comment-start "# ")
@@ -66,6 +69,7 @@
   (setq-local font-lock-defaults '(kconfig-mode-font-lock-keywords t))
   (setq-local outline-regexp (concat "^[\t ]*" (regexp-opt kconfig-headings)))
   (setq-local outline-level 'kconfig-outline-level)
+  (setq-local imenu-generic-expression kconfig-imenu-generic-expression)
   (add-hook 'completion-at-point-functions 'kconfig-completion-at-point nil 'local))
 
 ;;;###autoload
