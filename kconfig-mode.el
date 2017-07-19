@@ -1,7 +1,38 @@
-;;; kconfig.el - a major mode for editing linux kernel config (Kconfig) files
+;;; kconfig-mode.el --- Major mode for editing Kconfig files
+
 ;; Copyright © 2014 Yu Peng
 ;; Copyright © 2014 Michal Sojka
 ;; Copyright © 2017 Dela Anthonio
+
+;; Author: Dela Anthonio <dell.anthonio@gmail.com>
+;; Homepage: https://github.com/beta1440/kernel-modes
+;; Keywords: kconfig, linux, kernel
+;; Version: 0.1.0
+
+;; This file is not part of GNU Emacs.
+
+;; This file is free software; you can redistribute it and/or modify
+;; it under the terms of the GNU General Public License as published by
+;; the Free Software Foundation; either version 3, or (at your option)
+;; any later version.
+
+;; This file is distributed in the hope that it will be useful,
+;; but WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+;; GNU General Public License for more details.
+
+;; You should have received a copy of the GNU General Public License
+;; along with this file.  If not, see <http://www.gnu.org/licenses/>.
+
+;;; Commentary:
+
+;; This is a major mode for editing kconfig files.
+
+;; Setup:
+
+;; (require 'kconfig-mode)
+
+;;; Code:
 
 (defvar kconfig-mode-font-lock-keywords
   '(("\#.*" . font-lock-comment-face)
@@ -76,3 +107,4 @@
 (add-to-list 'auto-mode-alist '("Kconfig" . kconfig-mode))
 
 (provide 'kconfig-mode)
+;;; kconfig-mode.el ends here
