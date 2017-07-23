@@ -8,6 +8,7 @@
 ;; Homepage: https://github.com/beta1440/kernel-modes
 ;; Keywords: kconfig, linux, kernel
 ;; Version: 0.1.0
+;; Package-Requires: ((emacs "24.3"))
 
 ;; This file is not part of GNU Emacs.
 
