@@ -6,7 +6,7 @@
 
 ;; Author: Dela Anthonio <dell.anthonio@gmail.com>
 ;; Homepage: https://github.com/beta1440/kernel-modes
-;; Keywords: kconfig, linux, kernel
+;; Keywords: kconfig, languages, linux, kernel
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
 
