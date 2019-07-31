@@ -119,6 +119,7 @@
     "config" "comment" "menu" "endmenu" "if" "endif" "menuconfig" "source"))
 
 (defun kconfig-outline-level ()
+  "Kconfig function to compute nesting level."
   (looking-at "[\t ]*")
   (let ((prefix (match-string 0))
 	(result 0))
