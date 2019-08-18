@@ -120,13 +120,13 @@
 
 (defun kconfig-outline-level ()
   "Kconfig function to compute nesting level."
-  (looking-at "[\t ]*")
   (let ((prefix (match-string 0))
-	(result 0))
-    (dotimes (i (length prefix) result)
+        (result 0))
+    (dotimes (i (length prefix))
       (setq result (+ result
-		      (if (equal (elt prefix i) ?\s)
-			  1 tab-width))))))
+                      (if (equal (elt prefix i) ?\s)
+                          1 tab-width))))
+    result))
 
 (defun kconfig-completion-at-point ()
   "Kconfig completion function added to `completion-at-point-functions'."
