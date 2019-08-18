@@ -153,7 +153,7 @@
   :syntax-table kconfig-mode-syntax-table)
 
 ;;;###autoload
-(add-to-list 'auto-mode-alist '("\\Kconfig\\\'" . kconfig-mode))
+(add-to-list 'auto-mode-alist '("\\Kconfig\\'" . kconfig-mode))
 
 (provide 'kconfig-mode)
 ;;; kconfig-mode.el ends here
