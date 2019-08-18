@@ -2,10 +2,10 @@
 
 ;; Copyright © 2014 Yu Peng
 ;; Copyright © 2014 Michal Sojka
-;; Copyright © 2017 Dela Anthonio
+;; Copyright © 2019 Dela Anthonio
 
 ;; Author: Dela Anthonio <dell.anthonio@gmail.com>
-;; Homepage: https://github.com/beta1440/kernel-modes
+;; Homepage: https://github.com/delaanthonio/kernel-modes
 ;; Keywords: kconfig, languages, linux, kernel
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
@@ -23,7 +23,7 @@
 ;; GNU General Public License for more details.
 
 ;; You should have received a copy of the GNU General Public License
-;; along with this file.  If not, see <http://www.gnu.org/licenses/>.
+;; along with this file.  If not, see <https://www.gnu.org/licenses/>.
 
 ;;; Commentary:
 
