@@ -147,7 +147,7 @@
   (setq-local outline-regexp (concat "^[\t ]*" (regexp-opt kconfig-headings)))
   (setq-local outline-level 'kconfig-outline-level)
   (setq-local imenu-generic-expression kconfig-imenu-generic-expression)
-  (add-hook 'completion-at-point-functions 'kconfig-completion-at-point nil 'local)
+  (add-hook 'completion-at-point-functions #'kconfig-completion-at-point nil 'local)
 
   :group 'kconfig
   :syntax-table kconfig-mode-syntax-table)
