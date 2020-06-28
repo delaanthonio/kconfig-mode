@@ -5,7 +5,7 @@
 ;; Copyright © 2019 Dela Anthonio
 
 ;; Author: Dela Anthonio <dell.anthonio@gmail.com>
-;; Homepage: https://github.com/delaanthonio/kernel-modes
+;; Homepage: https://github.com/delaanthonio/kconfig-mode
 ;; Keywords: kconfig, languages, linux, kernel
 ;; Version: 0.1.0
 ;; Package-Requires: ((emacs "24.3"))
