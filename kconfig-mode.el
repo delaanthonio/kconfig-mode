@@ -138,6 +138,7 @@
 (defconst kconfig-imenu-generic-expression
   '(("Config" "^config *\\(.+\\)" 1)))
 
+;;;###autoload
 (define-derived-mode kconfig-mode prog-mode "Kconfig"
   "Major mode for editing Kconfig files in the Linux kernel."
   (setq-local comment-start "#")
