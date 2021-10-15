@@ -53,6 +53,10 @@
 
     ;; `_' as being a valid part of a word
     (modify-syntax-entry ?_ "w" syntax-table)
+
+    ;; `=' as a separator.
+    ;; e.g. HOTPLUG_PCI=y
+    (modify-syntax-entry ?= "-" syntax-table)
     syntax-table)
   "Syntax table for `kconfig-mode'.")
 
