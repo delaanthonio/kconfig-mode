@@ -64,7 +64,7 @@
   '("bool" "boolean" "hex" "int" "string" "tristate"))
 
 (defconst kconfig-config-keywords
-  '("def_bool" "default" "depends on" "prompt" "select" "range"))
+  '("def_bool" "default" "depends on" "imply" "prompt" "select" "range"))
 
 (defconst kconfig-defun-keywords
   '("config"))
@@ -118,7 +118,7 @@
     )   "Font lock faces highlighting for `kconfig-mode'.")
 
 (defvar kconfig-headings
-  '("bool" "int" "boolean" "hex" "tristate" "string" "def_bool" "depends on"
+  '("bool" "int" "boolean" "hex" "tristate" "string" "def_bool" "depends on" "imply"
     "select" "help" "---help---" "default" "prompt" "range" "choice" "endchoice"
     "config" "comment" "menu" "endmenu" "if" "endif" "menuconfig" "source"))
 
